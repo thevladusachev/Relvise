@@ -66,8 +66,9 @@ body {
     box-sizing: content-box;
 }
 
+
 ._ibg {
-    position: relative;
+    position: absolute;
 }
 
 .ibg img {
@@ -78,6 +79,7 @@ body {
     left: 0;
     object-fit: cover;
 }
+
 
 /*------------шапка----------------*/
 .header {
@@ -180,6 +182,12 @@ body {
     max-width: 400px;
 }
 
+@media (max-width: 992px) {
+    .main-block__body {
+        padding: 120px 0px 191px 0px;
+    }
+}
+
 .main-block__body>*:not(:last-child) {
     margin: 0px 0px 35px 0px;
 }
@@ -191,6 +199,13 @@ body {
     letter-spacing: 0.2px;
 }
 
+@media (max-width: 479px) {
+    .main-block__title {
+        font-size: 42px;
+    }
+
+}
+
 .main-block__text {
     color: #737373;
     font-size: 20px;
@@ -200,6 +215,8 @@ body {
 /*----------------------------------кнопки------------------------------------*/
 .main-block__buttons {
     display: inline-flex;
+    flex-wrap: wrap;
+    margin: -10px 0;
 }
 
 .main-block__button {
@@ -213,10 +230,17 @@ body {
     font-weight: 700;
     line-height: 150%;
     padding: 5px 36px;
+    margin: 10px 0;
+}
+
+@media (max-width: 479px) {
+    .main-block__button {
+        flex: 1 1 auto
+    }
 }
 
 .main-block__button:not(:last-child) {
-    margin: 0px 10px 0px 0px;
+    margin-right: 10px;
 }
 
 
@@ -230,10 +254,22 @@ body {
     border: 1px solid #0d5c63;
 }
 
-.main-block_img {
+.main-block__image {
     position: absolute;
     width: 100%;
     height: 100%;
     left: 0;
     top: 0;
+}
+
+@media (max-width: 1240px) {
+    ._ibg img {
+        object-position: right;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-block__image {
+        opacity: 0.5;
+    }
 }
