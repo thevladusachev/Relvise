@@ -184,6 +184,7 @@ body {
     padding: 184px 0px 191px 0px;
     z-index: 2;
     max-width: 400px;
+
 }
 
 @media (max-width: 992px) {
@@ -297,6 +298,7 @@ body {
 .services__column {
     padding: 0px 15px;
     flex: 0 1 33 333%;
+
 }
 
 .services__item {
@@ -306,7 +308,15 @@ body {
 
 }
 
-.item-service {}
+.item-service {
+    width: 328px;
+    height: 242px;
+}
+
+.item-service_green {
+    background: #0D5C63;
+    color: #FFFFFF;
+}
 
 .item-service>*:not(:last-child) {
     margin: 0px 0px 10px 0px;
@@ -327,4 +337,8 @@ body {
     font-size: 14px;
     line-height: 142%;
     letter-spacing: 0.2px;
+}
+
+.item-service__text_white {
+    color: white
 }
