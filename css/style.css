@@ -177,7 +177,7 @@ body {
     position: relative;
     padding: 184px 0px 191px 0px;
     z-index: 2;
-    max-width: 509px;
+    max-width: 400px;
 }
 
 .main-block__body>*:not(:last-child) {
@@ -203,22 +203,32 @@ body {
 }
 
 .main-block__button {
-    background: #FF7B47;
     border-radius: 37px;
     display: flex;
     min-height: 48px;
     justify-content: center;
     align-items: center;
     letter-spacing: 0.2px;
-    color: white;
     text-align: center;
     font-weight: 700;
-    line-height: 200%;
+    line-height: 150%;
     padding: 5px 36px;
-
 }
 
-.main-block__button_border {}
+.main-block__button:not(:last-child) {
+    margin: 0px 10px 0px 0px;
+}
+
+
+.main-block__button_orange {
+    background: #FF7B47;
+    color: white;
+}
+
+.main-block__button_border {
+    color: #0d5c63;
+    border: 1px solid #0d5c63;
+}
 
 .main-block_img {
     position: absolute;
