@@ -171,6 +171,16 @@ body {
     z-index: 2;
 }
 
+.page__advantages {}
+
+/*-------------------header-block---------------*/
+
+.header-block {}
+
+.header-block__title {}
+
+.header-block__subtitle {}
+
 /*-------------------подвал-----------------------*/
 
 .footer {}
@@ -353,3 +363,25 @@ body {
 .item-service__text_white {
     color: white
 }
+
+/*---------------------------advantages-----------------------------*/
+
+
+
+.advantages {}
+
+.advantages__container {}
+
+.advatages__header {}
+
+.advantages__body {}
+
+.advantages__column {}
+
+.advantages__item {}
+
+.advantages__icon {}
+
+.advantages__value {}
+
+.advantages__text {}
