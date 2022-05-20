@@ -46,6 +46,7 @@ body {
     line-height: 1;
     font-size: 14px;
     color: #252b42;
+    background-color: #fafafa;
     font-weight: 500;
     font-family: Montserrat;
 }
@@ -175,11 +176,30 @@ body {
 
 /*-------------------header-block---------------*/
 
-.header-block {}
+.header-block {
+    text-align: center;
+    letter-spacing: 0.2px;
 
-.header-block__title {}
 
-.header-block__subtitle {}
+}
+
+.header-block__title {
+    font-size: 40px;
+    line-height: 142%;
+    font-weight: 700;
+
+}
+
+.header-block__title:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+}
+
+
+.header-block__subtitle {
+    line-height: 142%;
+    color: #737373;
+    font-weight: 500;
+}
 
 /*-------------------подвал-----------------------*/
 
@@ -368,20 +388,53 @@ body {
 
 
 
-.advantages {}
+.advantages {
+    padding: 80px 0;
+}
 
 .advantages__container {}
 
-.advatages__header {}
+.advatages__header {
+    margin: 0px 0px 50px 0px;
+}
 
-.advantages__body {}
+.advantages__body {
+    display: flex;
+    margin: 0 -15px;
+}
 
-.advantages__column {}
+.advantages__column {
+    padding: 0 15px;
+    flex: 0 1 25%
+}
 
-.advantages__item {}
+.advantages__item {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    font-weight: 700;
+}
 
-.advantages__icon {}
+.advantages__item *:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+}
 
-.advantages__value {}
+.advantages__icon {
+    height: 48px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
 
-.advantages__text {}
+.advantages__value {
+    font-size: 40px;
+
+    line-height: 142%;
+}
+
+.advantages__text {
+    letter-spacing: 0.1px;
+    color: #737373;
+    font-size: 16px;
+    line-height: 150%;
+}
