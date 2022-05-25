@@ -150,6 +150,8 @@ body {
 
 .page__whoweare {}
 
+.page__clients {}
+
 /*-------------------header-block---------------*/
 
 .header-block {
@@ -550,4 +552,30 @@ body {
     font-size: 14px;
     letter-spacing: 171%;
     color: #737373;
+}
+
+/*--------------------clients--------------------------*/
+
+.clients {
+    padding: 50px 0;
+}
+
+.clients__container {}
+
+.clients__items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.clients__item {
+    padding: 8px 15px;
+    flex: 0 1 16.6667%;
+    text-align: center;
+    min-width: 140px;
+}
+
+.clients__item img {
+    max-width: 100%;
 }
