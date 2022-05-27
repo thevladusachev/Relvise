@@ -159,6 +159,8 @@ body {
 
 .page__getintouch {}
 
+.page__contact {}
+
 /*-------------------header-block---------------*/
 
 .header-block {
@@ -698,7 +700,7 @@ body {
     background-color: #252B42;
     padding: 80px 15px;
     color: #fff;
-    
+
 }
 
 .item-getintouch_active .item-getintouch__button {
@@ -762,4 +764,64 @@ body {
     border: 1px solid #FF7B47;
     background-color: #FF7B47;
     color: #fff;
+}
+
+/*---------------------contact-----------------*/
+
+
+.contact {
+    background-color: #fff;
+    padding: 42px 0;
+}
+
+.contact__container {}
+
+.contact__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact__content {
+    color: #252B42;
+}
+
+.contact__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: 0.1px;
+}
+
+.contact__title:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+}
+
+.contact__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.contact__button {
+    display: flex;
+    background-color: #FF7B47;
+    border-radius: 5px;
+    padding: 15px 40px;
+    min-height: 58px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    transition: background-color 0.3s ease 0s;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 200%;
+    letter-spacing: 0.2px;
+}
+
+.contact__button:hover {
+    background-color: #db511a;
 }
