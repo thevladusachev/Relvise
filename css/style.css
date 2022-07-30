@@ -955,6 +955,7 @@ body {
 .bottom__icon {
 	display: flex;
 	gap: 20px;
+	align-items: center;
 }
 
 .bottom__icon_list {}
